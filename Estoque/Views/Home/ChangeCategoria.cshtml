@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "ChangeCategoria";
+}
+
+<h2>Editar nome de uma Categoria</h2>
+
+@Html.ActionLink("Apagar Categoria", "DelCategorias", "Home")
+@Html.ActionLink("Adicionar Categoria", "Categorias", "Home")
+
+@using (Html.BeginForm("ChangeCategoria", "Home", FormMethod.Post))
+{
+    @Html.DropDownList("Categoria", null, "SELECIONE UM CATEGORIA", new { @class = "Plano", @Id = "Categoria", type = "text" })
+    <input type="text" placeholder="Digite o novo nome da categoria" id="new_name" name="new_name" minlength="3" />
+    <input type="submit" value="Alterar">
+    <label>@ViewBag.msg</label>
+}
+
+<table class="table-hover table-condensed">
+    <tr>
+        <th>ID</th>
+        <th>Categoria</th>
+    </tr>
+
+    @{
+        foreach (var item in ViewBag.grid)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.nm_categoria</td>
+            </tr>
+        }
+    }
+
+</table>

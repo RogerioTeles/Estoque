@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque", "Estoque\Estoque.csproj", "{3A1B176D-551E-476D-B84E-5E545D8E8B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConexaoBD", "ConexaoBD\ConexaoBD.csproj", "{7B04A9A0-604F-441A-B17D-FC10CB40FE36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objetos", "Objetos\Objetos.csproj", "{874FF4FB-AF78-4E50-AF9E-B7800B8F01B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A1B176D-551E-476D-B84E-5E545D8E8B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1B176D-551E-476D-B84E-5E545D8E8B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1B176D-551E-476D-B84E-5E545D8E8B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1B176D-551E-476D-B84E-5E545D8E8B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B04A9A0-604F-441A-B17D-FC10CB40FE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B04A9A0-604F-441A-B17D-FC10CB40FE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B04A9A0-604F-441A-B17D-FC10CB40FE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B04A9A0-604F-441A-B17D-FC10CB40FE36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874FF4FB-AF78-4E50-AF9E-B7800B8F01B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874FF4FB-AF78-4E50-AF9E-B7800B8F01B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874FF4FB-AF78-4E50-AF9E-B7800B8F01B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874FF4FB-AF78-4E50-AF9E-B7800B8F01B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

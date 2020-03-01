@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Estoque Sys";
+}
+
+<div class="div-principal" >
+    <h2 class="menutitle">Menu</h2>
+    <div class="btns">
+        @Html.ActionLink("Categorias", "Categorias", "Home", new { area = "" }, new { @class = "btn-1" })
+        @Html.ActionLink("Produto", "Produto", "Home", new { area = "" }, new { @class = " btn-2" })
+        @Html.ActionLink("Todos os Produtos", "Tudo", "Home", new { area = "" }, new { @class = "btn-3" })
+    </div>
+</div>
+
+

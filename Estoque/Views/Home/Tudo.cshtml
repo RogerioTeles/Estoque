@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Tudo";
+}
+
+<h2>Tudo</h2>
+
+<table class="table-round-corner">
+    <tr class="">
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Quantidade</th>
+        <th>Código Categoria</th>
+        <th>Categoria</th>
+    </tr>
+
+    @{ foreach(var items in ViewBag.todos)
+        {
+            <tr class="table-data">
+                <td>@items.idProduto</td>
+                <td>@items.nomeProduto</td>
+                <td>@items.descricao</td>
+                <td>@items.quantidade</td>
+                <td>@items.Categorias_id</td>
+                <td>@items.nome_categoria</td>
+                
+            </tr>
+        }
+
+    }
+</table>

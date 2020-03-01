@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Categorias";
+}
+
+<h2>Adicionar Nova Categoria</h2>
+@Html.ActionLink("Editar Categoria", "ChangeCategoria", "Home")
+@Html.ActionLink("Apagar Categoria", "DelCategorias", "Home")
+<div class="div-addcat">
+    @using (Html.BeginForm("Categorias", "Home", FormMethod.Post))
+    {
+
+        <input name="Categoria" id="Categoria" class="form-control txt-cat" placeholder="Categoria" minlength="3" maxlength="50" />
+        <input type="submit" class="btn btn-primary btn-addcat" value="Adicionar" id="btn-Adicionar" name="botão Adicionar" />
+        <label>@ViewBag.msg</label>
+    }
+</div>
+    <table class="table-cat">
+        <tr>
+            <th>ID</th>
+            <th >Categoria</th>
+        </tr>
+
+        @{
+            foreach (var item in ViewBag.grid)
+            {
+                <tr class="table-data">
+                    <td>@item.id</td>
+                    <td>@item.nm_categoria</td>
+                </tr>
+            }
+        }
+
+    </table>
+
+

@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "DelCategorias";
+}
+
+<h2>Deletar uma Categoria</h2>
+<h4>Obs : Lembre-se de verificar se não há nenhum produto nessa categoria antes de apagá-la</h4>
+@Html.ActionLink("Editar Categoria", "ChangeCategoria", "Home")
+@Html.ActionLink("Adicionar Categoria", "Categorias", "Home")
+@using (Html.BeginForm("DelCategorias", "Home", FormMethod.Post))
+{
+@Html.DropDownList("Categoria", null, "SELECIONE UM CATEGORIA", new { @class = "Plano", @Id = "Categoria", type = "text" })
+    <input type="submit" value="Apagar Categoria">
+    <label>@ViewBag.msg</label>
+}
+
+<<table class="table-cat">
+    <tr>
+        <th>ID</th>
+        <th>Categoria</th>
+    </tr>
+
+    @{
+        foreach (var item in ViewBag.grid)
+        {
+            <tr class="table-data">
+                <td>@item.id</td>
+                <td>@item.nm_categoria</td>
+            </tr>
+        }
+    }
+</table>

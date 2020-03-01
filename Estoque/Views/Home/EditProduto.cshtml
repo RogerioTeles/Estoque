@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "EditProduto";
+}
+
+<h2>Editar Produto</h2>
+@Html.ActionLink("Produto", "Produto", "Home")
+@Html.ActionLink("Apagar Produto", "DelProduto", "Home")
+@using (Html.BeginForm("EditProduto", "Home", FormMethod.Post))
+{
+    @Html.DropDownList("Produto", null, "SELECIONE UM PRODUTO", new { @class = "Plano", @Id = "produto", type = "text" })
+
+
+    <input type="text" id="Nome" name="Nome" placeholder="Novo Nome" />
+    @Html.DropDownList("Categoria", null, "Nova Categoria", new { @class = "Plano", @Id = "Categoria", type = "text" })
+    <input type="text" id="desc" name="desc" placeholder="Nova Descriçao" />
+    <input type="number" id="qtd" name="qtd" placeholder="Nova Quantidade" />
+    <input type="submit" value="Editar Produto" id="btn-Editar" name="" />
+    <label>@ViewBag.msg</label>
+}
+
+<table class="table-round-corner">
+    <tr class="">
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Quantidade</th>
+        <th>Código Categoria</th>
+        <th>Categoria</th>
+    </tr>
+
+    @{ foreach (var items in ViewBag.Grid)
+        {
+            <tr class="table-data">
+                <td>@items.idProduto</td>
+                <td>@items.nomeProduto</td>
+                <td>@items.descricao</td>
+                <td>@items.quantidade</td>
+                <td>@items.Categorias_id</td>
+                <td>@items.nome_categoria</td>
+
+            </tr>
+        }
+
+    }
+</table>

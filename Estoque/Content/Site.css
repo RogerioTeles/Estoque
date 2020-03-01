@@ -1,0 +1,180 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    background-size: cover;
+}
+
+.body {
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+.div-principal {
+    margin-top: 10%;
+    background: #a0a0a0;
+    width: 100%;
+    min-height: 500px;
+    max-height: 700px;
+    border-radius: 30px;
+}
+
+.btns {
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.menutitle {
+    font-family: 'Frank Ruehl CLM MediumOblique';
+    padding-top: 2%;
+    font-size: 340%;
+    color: WHITE;
+    text-align: center;
+}
+
+.teste {
+    background-color: red;
+}
+
+.table-round-corner {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    border: thin 0px;
+    border-collapse: separate;
+    border-spacing: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #a8a8a8;
+}
+
+.table-data {
+    text-align: center;
+    background-color: #ededed;
+    align-content: center;
+    align-items: center;
+}
+
+.table th {
+    color: black;
+    font-size: 16px;
+    background: #B1D34B;
+    background-color: #B1D34B;
+    font-weight: normal;
+    text-align: center;
+    padding: 8px;
+    border: thin;
+}
+
+.btn-1 {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 20%;
+    height: 40%;
+    padding: 30px;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    color: #13579c;
+    font-family: 'Frank Ruehl CLM MediumOblique';
+    font-size: 30px;
+}
+
+    .btn-1:hover {
+        background-color: #13579c;
+        color: white;
+        overflow: hidden;
+        text-decoration: none;
+    }
+
+.btn-2 {
+    margin-left: 10%;
+    width: 20%;
+    height: 40%;
+    padding: 30px;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    color: #13579c;
+    font-family: 'Frank Ruehl CLM MediumOblique';
+    font-size: 30px;
+}
+
+    .btn-2:hover {
+        background-color: #13579c;
+        color: white;
+        overflow: hidden;
+        text-decoration: none;
+    }
+
+.btn-3 {
+    margin-left: 10%;
+    width: 20%;
+    height: 40%;
+    padding: 30px;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    color: #13579c;
+    font-family: 'Frank Ruehl CLM MediumOblique';
+    font-size: 30px;
+}
+
+    .btn-3:hover {
+        background-color: #13579c;
+        color: white;
+        overflow: hidden;
+        text-decoration: none;
+    }
+
+.txt-cat {
+    margin-top: 2%;
+}
+
+.btn-addcat {
+    margin-top: -5.2%;
+    margin-left: 26%;
+}
+
+.div-addcat {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.table-cat {
+   margin-top: 15px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: thin 0px;
+    border-collapse: separate;
+    border-spacing: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #a8a8a8;
+    text-align:center;
+    align-content:center;
+    align-items:center;
+}
